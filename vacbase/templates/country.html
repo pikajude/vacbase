@@ -1,0 +1,10 @@
+<h5>Recommended vaccinations for {{ country }}</h5>
+{% if vax %}
+  <ul>
+    {% for vac in vax %}
+      <li>{{ vac[2] }}</li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No recommendations found</p>
+{% endif %}
